@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  waha:
+    image: devlikeapro/waha:latest
+    container_name: waha
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - WHATSAPP_API_KEY=supercleapi
+      - WHATSAPP_HOOK_URL=${WEBHOOK_URL}
+      - WHATSAPP_HOOK_EVENTS=message,ready,disconnected
+    volumes:
+      - ./data:/app/.sessions
