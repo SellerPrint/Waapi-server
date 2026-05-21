@@ -3,7 +3,6 @@ services:
     name: waapi-server
     env: docker
     dockerfilePath: ./Dockerfile
-    dockerCommand: node dist/index.js
     plan: free
 
     envVars:
