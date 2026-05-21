@@ -1,13 +1,17 @@
 services:
-  - type: web
-    name: waha
-    env: docker
-    dockerfilePath: ./Dockerfile
-    plan: free
-    envVars:
-      - key: WHATSAPP_API_KEY
-        value: supercleapi
-      - key: WHATSAPP_HOOK_EVENTS
-        value: message,ready,disconnected
-      - key: WEBHOOK_URL
-        sync: false
+- type: web
+  name: waha
+  env: docker
+  dockerfilePath: ./Dockerfile
+  plan: free
+  envVars:
+  - key: WHATSAPP_API_KEY
+    value: supercleapi
+  - key: WHATSAPP_HOOK_EVENTS
+    value: message,ready,disconnected
+  - key: WEBHOOK_URL
+    sync: false
+  - key: WAHA_DASHBOARD_USERNAME     # Ajouté
+    value: admin                      # Choisissez votre login
+  - key: WAHA_DASHBOARD_PASSWORD     # Ajouté
+    value: monMotDePasseFort          # Choisissez un mot de passe sécurisé
