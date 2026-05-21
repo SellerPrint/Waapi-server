@@ -1,4 +1,4 @@
-FROM devlikeapro/waha:2025.5.1
+FROM devlikeapro/waha:latest
 
 ENV WAHA_API_KEY=supercleapi
 
