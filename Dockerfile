@@ -9,5 +9,3 @@ ENV BASIC_AUTH_ENABLED=false
 ENV AUTHENTICATION_ENABLED=false
 
 EXPOSE 3000
-
-CMD ["node", "dist/index.js"]
