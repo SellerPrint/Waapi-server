@@ -1,17 +1,23 @@
 services:
   - type: web
-    name: waha
+    name: waapi-server
     env: docker
     dockerfilePath: ./Dockerfile
+    dockerCommand: node dist/index.js
     plan: free
+
     envVars:
-      - key: WHATSAPP_API_KEY
+      - key: WAHA_API_KEY
         value: supercleapi
+
       - key: WAHA_DASHBOARD_ENABLED
         value: "false"
+
       - key: WAHA_SWAGGER_ENABLED
         value: "false"
-      - key: WHATSAPP_HOOK_EVENTS
-        value: message,ready,disconnected
-      - key: WEBHOOK_URL
-        sync: false
+
+      - key: BASIC_AUTH_ENABLED
+        value: "false"
+
+      - key: AUTHENTICATION_ENABLED
+        value: "false"
