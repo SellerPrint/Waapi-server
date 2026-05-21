@@ -1,4 +1,5 @@
 FROM devlikeapro/waha:latest
 ENV WHATSAPP_API_KEY=supercleapi
-ENV WHATSAPP_HOOK_EVENTS=message,ready,disconnected
+ENV WAHA_DASHBOARD_ENABLED=false
+ENV WAHA_SWAGGER_ENABLED=false
 EXPOSE 3000
