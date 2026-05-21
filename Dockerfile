@@ -1,5 +1,13 @@
-FROM devlikeapro/waha:latest
-ENV WHATSAPP_API_KEY=supercleapi
+FROM devlikeapro/waha:2025.5.1
+
+ENV WAHA_API_KEY=supercleapi
+
 ENV WAHA_DASHBOARD_ENABLED=false
 ENV WAHA_SWAGGER_ENABLED=false
+
+ENV BASIC_AUTH_ENABLED=false
+ENV AUTHENTICATION_ENABLED=false
+
 EXPOSE 3000
+
+CMD ["node", "dist/index.js"]
