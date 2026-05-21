@@ -11,7 +11,11 @@ services:
     value: message,ready,disconnected
   - key: WEBHOOK_URL
     sync: false
-  - key: WAHA_DASHBOARD_USERNAME     # Ajouté
-    value: admin                      # Choisissez votre login
-  - key: WAHA_DASHBOARD_PASSWORD     # Ajouté
-    value: monMotDePasseFort          # Choisissez un mot de passe sécurisé
+  - key: WAHA_DASHBOARD_USERNAME
+    value: admin
+  - key: WAHA_DASHBOARD_PASSWORD
+    value: monMotDePasseFort
+  - key: WHATSAPP_SWAGGER_USERNAME   # 🔑 Ajout nécessaire
+    value: admin                     # 👈 Utilisez le même identifiant
+  - key: WHATSAPP_SWAGGER_PASSWORD   # 🔐 Ajout nécessaire
+    value: monMotDePasseFort         # 👈 Utilisez le même mot de passe
