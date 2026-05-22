@@ -6,7 +6,7 @@ services:
     plan: free
     envVars:
       - key: WAHA_API_KEY
-        value: supercleapi
+        value: "8736HnkOoGqiAv8ldqWUWnu4jqWRnFApmjgJ0qFnab7888ad"
       - key: WAHA_DASHBOARD_ENABLED
         value: "false"
       - key: WHATSAPP_SWAGGER_ENABLED
