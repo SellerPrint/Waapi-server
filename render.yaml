@@ -4,19 +4,18 @@ services:
     env: docker
     dockerfilePath: ./Dockerfile
     plan: free
-
     envVars:
       - key: WAHA_API_KEY
         value: supercleapi
-
       - key: WAHA_DASHBOARD_ENABLED
-        value: "false"
-
-      - key: WAHA_SWAGGER_ENABLED
-        value: "false"
-
-      - key: BASIC_AUTH_ENABLED
-        value: "false"
-
-      - key: AUTHENTICATION_ENABLED
-        value: "false"
+        value: "false"                   # ✅ désactive complètement le dashboard
+      - key: WHATSAPP_SWAGGER_ENABLED
+        value: "false"                   # ✅ désactive Swagger UI
+      - key: WAHA_DASHBOARD_NO_PASSWORD
+        value: "True"                    # ✅ variable correcte
+      - key: WAHA_DASHBOARD_PASSWORD
+        value: ""                        # ✅ doit être vide
+      - key: WHATSAPP_SWAGGER_NO_PASSWORD
+        value: "True"                    # ✅ désactive auth Swagger aussi
+      - key: WHATSAPP_SWAGGER_PASSWORD
+        value: ""
