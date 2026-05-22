@@ -8,14 +8,16 @@ services:
       - key: WAHA_API_KEY
         value: supercleapi
       - key: WAHA_DASHBOARD_ENABLED
-        value: "false"                   # ✅ désactive complètement le dashboard
+        value: "false"
       - key: WHATSAPP_SWAGGER_ENABLED
-        value: "false"                   # ✅ désactive Swagger UI
+        value: "false"
       - key: WAHA_DASHBOARD_NO_PASSWORD
-        value: "True"                    # ✅ variable correcte
+        value: "True"
       - key: WAHA_DASHBOARD_PASSWORD
-        value: ""                        # ✅ doit être vide
+        value: ""
       - key: WHATSAPP_SWAGGER_NO_PASSWORD
-        value: "True"                    # ✅ désactive auth Swagger aussi
+        value: "True"
       - key: WHATSAPP_SWAGGER_PASSWORD
+        value: ""
+      - key: WHATSAPP_SWAGGER_USERNAME
         value: ""
